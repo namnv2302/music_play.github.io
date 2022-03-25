@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.0-web/fontawesome-free-6.1.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="player">
+        <!-- Dashboard -->
+        <div class="dashboard">
+            <!-- Header -->
+            <header class="header">
+                <h4>Now playing:</h4>
+                <h2>Bigcityboi</h2>
+            </header>
+            <!-- Cd -->
+            <div class="cd">
+                <div class="cd-thumb"
+                style="background-image: url('https://upload.wikimedia.org/wikipedia/vi/1/1b/Binz_-_Bigcityboi.jpg');"> 
+                </div>
+            </div>
+            <!-- Control -->
+            <div class="control">
+                <div class="btn btn-repeat">
+                    <i class="fa-solid fa-repeat"></i>
+                </div>
+                <div class="btn btn-prev">
+                    <i class="fa-solid fa-backward-step"></i>
+                </div>
+                <div class="btn btn-toggle-play">
+                    <i class="fa-solid fa-pause icon-pause"></i>
+                    <i class="fa-solid fa-play icon-play"></i>
+                </div>
+                <div class="btn btn-next">
+                    <i class="fa-solid fa-forward-step"></i>
+                </div>
+                <div class="btn btn-random">
+                    <i class="fa-solid fa-shuffle"></i>
+                </div>
+            </div>
+            <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="1000">
+
+            <audio id="audio" src=""></audio>
+        </div>
+
+        <!-- Playlist -->
+        <div class="playlist">
+            <div class="song">
+                
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="./main.js"></script>
+</html>
